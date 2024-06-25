@@ -2,20 +2,120 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: rgba(10, 9, 9, 0.944);
+    color:azure;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+
   }
   #root {
+    width: 100%;
+
+  }
+  .Question{
+    display: flex;
+    flex-direction: column;
+    border:solid 0.5px rgb(66, 149, 216);
+    border-radius: 10px;
+    width:45vw;
+    margin: 6px;
+    padding: 2px;
+   
+  }
+  .title{
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .tags{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+  }
+  .tag{
+    border:solid 1px white;
+    border-radius: 10px;
+    width: max-content;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin: 2px;
+
+  }
+  .difficulty{
+    
+    color:red;
+    border: red solid 1px;
+    border-radius: 10px;
+    margin-top: 4px;
+    padding: 4px;
+    font-size: small;
+  }
+  
+  .ques{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .QuestionPage{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .page-header{
+    font-weight: 500;
+    font-size: large;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(211, 216, 206);
-    padding: 2vh;
-    font-family: fantasy;
-    font-size: xx-large;
-    font-weight: 700;
-    color: cornflowerblue;
-    position: absolute;
-    top: 50vh;
-    left: 50vw;
-    translate: -50% -50%;
+    padding:2vh;
+    width: 98vw;
+    background: linear-gradient(
+        to bottom,
+        rgba(12, 122, 21, 0.608),
+        rgba(22, 22, 22, 0)
+      );
+    height: 30px;
+
   }
+  .page-body{
+    display: flex;
+    flex-direction: row;
+    margin: 2vh;
+    justify-content: space-evenly;
+  }
+ .left-wrapper{
+    
+    
+ }
+ .header{
+  
+    width: 100%;
+    z-index: 3;
+    margin-right: 6px;
+    margin-left: 6px;
+ }
+ .appName{
+
+ }
+
+ .menu-wrapper{
+   width:20%;
+   margin-right: 5px;
+ }
+
+.flex-row-space-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ 
+.coding-iframe{
+    height:90vh;
+    width: 90%;
+    float: right;
+}

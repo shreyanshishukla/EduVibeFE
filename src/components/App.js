@@ -1,3 +1,11 @@
+import Coding from "./Coding.jsx";
+
 export default ()=>{
-    return <div>Welcome to scra by Shreyanshi</div>;
+    return <div>
+        <Coding/>
+        {/* Welcome to EduVibe!
+       */}
+
+
+    </div>;
 }
