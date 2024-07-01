@@ -17,11 +17,14 @@ module.exports = {
     rules: [
       {
         test: /\.(js|jsx)$/,
+        exclude: new RegExp (/node_modules/),
         use: "babel-loader",
+      
       },
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
+  
       },
     ],
   },
